@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.bg-skyblue {
+    background-color: #00AFE1;
+}
+
+.bg-red {
+    background-color: #FF0000;
+}
+
+.bg-gradient-black {
+    background: linear-gradient(180deg, #000000 0%, #393939 100%)
+}
+
+.bg-fade-white {
+    background-color: #F5F5F5;
+}
