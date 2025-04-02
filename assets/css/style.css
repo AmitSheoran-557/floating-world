@@ -22,3 +22,16 @@
 .bg-fade-white {
     background-color: #F5F5F5;
 }
+
+.accordion-content {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+}
+
+.accordion-content.open {
+    max-height: 200px;
+    /* Adjust based on content */
+    opacity: 1;
+}
