@@ -5,6 +5,7 @@
 
 * {
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .bg-skyblue {
@@ -19,10 +20,16 @@
     background: linear-gradient(180deg, #000000 0%, #393939 100%)
 }
 
+.btn:hover.bg-gradient-white {
+    background: white;
+    transition: transform all 0.10s ease-out;
+}
+
 .bg-fade-white {
     background-color: #F5F5F5;
 }
 
+/* ============================= faq css ============================================= */
 .accordion-content {
     transition: max-height 0.3s ease, opacity 0.3s ease;
     overflow: hidden;
@@ -32,6 +39,78 @@
 
 .accordion-content.open {
     max-height: 200px;
-    /* Adjust based on content */
     opacity: 1;
+}
+
+.down-arrow-icon {
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ============================= basic advance btn css =================================== */
+.toggle-btn {
+    padding: 10px 40px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.toggle-btn.active {
+    color: white !important;
+    z-index: 100;
+}
+
+/* ================================== tabs css ===================================== */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.active-tab {
+    background: white !important;
+    color: #00AFE1;
+    border: 1px solid #00AFE1;
+}
+
+/* ================================== slider css ===================================== */
+
+.swiper-slide {
+    width: auto !important;
+    transition-timing-function: linear !important;
+}
+
+.swiper-container {
+    padding: 0 20px;
+    overflow: visible !important;
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+/* ================================= marquee css ======================================== */
+.marquee {
+    display: inline-flex;
+    width: auto;
+    animation: slide-left 12s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(-108%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
